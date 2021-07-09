@@ -58,9 +58,9 @@ export default class Game extends React.Component {
                     let newI = i + di;
                     let newJ = j + dj;
                                         
-                    //const newGame = _.clone(game);
-                    //newGame[newI][newJ] = element;
-                    //newGame[i][j] = 0;
+                    const newGame = _.clone(game);
+                    newGame[newI][newJ] = element;
+                    newGame[i][j] = 0;
                     this.setState({game: newGame, playerName: 'amal'});
                     return false;
                 }
